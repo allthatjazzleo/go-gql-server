@@ -4,21 +4,25 @@ import (
 	"log"
 
 	"github.com/allthatjazzleo/go-gql-server/internal/handlers"
+	"github.com/allthatjazzleo/go-gql-server/pkg/utils"
 	"github.com/gin-gonic/gin"
 )
 
-var HOST, PORT string
+var host, port string
 
 func init() {
-	HOST = "localhost"
-	PORT = "7777"
+	host = utils.MustGet("GQL_SERVER_HOST")
+	port = utils.MustGet("GQL_SERVER_PORT")
 }
 
-// Run web server
+// Run spins up the server
 func Run() {
 	r := gin.Default()
-	// Setup routes
+	// Simple keep-alive/ping handler
 	r.GET("/ping", handlers.Ping())
-	log.Println("Running @ http://" + HOST + ":" + PORT)
-	log.Fatalln(r.Run(HOST + ":" + PORT))
+	// Inform the user where the server is listening
+	log.Println("Running @ http://" + host + ":" + port)
+	// Print out and exit(1) to the OS if the server cannot run
+	log.Fatalln(r.Run(host + ":" + port))
+
 }
