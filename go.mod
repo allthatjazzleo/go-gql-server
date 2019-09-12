@@ -8,11 +8,13 @@ require (
 	github.com/denisenkom/go-mssqldb v0.0.0-20190910235433-dd40567e5238 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.4.0
+	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/jinzhu/gorm v1.9.10
 	github.com/json-iterator/go v1.1.7 // indirect
 	github.com/lib/pq v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.9 // indirect
 	github.com/mattn/go-sqlite3 v1.11.0 // indirect
+	github.com/sirupsen/logrus v1.4.2
 	github.com/stretchr/testify v1.4.0 // indirect
 	github.com/ugorji/go v1.1.7 // indirect
 	github.com/vektah/gqlparser v1.1.2

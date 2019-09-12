@@ -6,7 +6,7 @@ import (
 	// log "github.com/cmelgarejo/go-gql-server/internal/logger"
 	"log"
 
-	"github.com/allthatjazzleo/go-gql-server/internal/orm/migration/jobs"
+	"github.com/allthatjazzleo/go-gql-server/internal/orm/migrations/jobs"
 	"github.com/allthatjazzleo/go-gql-server/internal/orm/models"
 	"github.com/jinzhu/gorm"
 	"gopkg.in/gormigrate.v1"
