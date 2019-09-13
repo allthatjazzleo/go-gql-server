@@ -6,8 +6,7 @@ import (
 	//bonus part
 	"log"
 
-	"github.com/allthatjazzleo/go-gql-server/internal/orm/migration"
-
+	"github.com/allthatjazzleo/go-gql-server/internal/ocm/migration"
 	"github.com/allthatjazzleo/go-gql-server/pkg/utils"
 	//Imports the database dialect of choice
 	_ "github.com/jinzhu/gorm/dialects/postgres"
